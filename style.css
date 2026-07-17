@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Fira+Code&display=swap');
+
+:root {
+  --bg-color: #050a05;
+  --text-color: #39ff14;
+  --heading-color: #39ff14;
+  --link-color: #39ff14;
+  --border-style: 2px solid #39ff14;
+  --border-color: #39ff14;
+  --border-radius: 0px;
+  --font-body: 'Fira Code', monospace;
+  --font-heading: 'VT323', monospace;
+  --panel-bg: #0a1a0a;
+  cursorUrl: preset-star;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  cursor: url('assets/cursor-star.png'), auto;
+}
+.rc-nav {
+  background: var(--panel-bg);
+  border: var(--border-style);
+  padding: 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+.rc-nav a {
+  color: var(--link-color);
+  text-decoration: underline;
+  font-family: var(--font-heading);
+}
+.rc-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.rc-container > * { margin-bottom: 16px; }
+.rc-footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+.rc-heading { font-family: var(--font-heading); color: var(--heading-color); }
+.rc-text { word-wrap: break-word; }
+.rc-image { text-align: center; }
+.rc-image img { border: var(--border-style); border-radius: var(--border-radius); }
+.rc-button-wrap { text-align: center; margin: 12px 0; }
+.rc-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--panel-bg);
+  color: var(--text-color);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-family: var(--font-heading);
+}
+.rc-button-bevel { border-style: outset; border-width: 4px; }
+.rc-button-sparkle { background: linear-gradient(45deg,#ff00ff,#00ffff); color: #fff; text-shadow: 1px 1px 2px #000; }
+.rc-button-terminal { background: #000; color: #0f0; font-family: monospace; border: 2px solid #0f0; }
+.rc-marquee { padding: 8px; background: var(--panel-bg); }
+.rc-rainbow { background: linear-gradient(90deg,#ff0000,#ff8800,#ffff00,#00ff00,#0088ff,#8800ff) !important; color: #fff; font-weight: bold; }
+.rc-gallery img { width: 100%; height: auto; display: block; }
+.rc-badge-row { padding: 8px 0; }
+.rc-badge { image-rendering: pixelated; }
+.rc-music-player {
+  background: var(--panel-bg);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  padding: 12px;
+}
+.rc-player-title { font-family: var(--font-heading); margin-bottom: 8px; }
+.rc-player-winamp { background: #1a1a2e; color: #00ff00; }
+.rc-player-cassette { background: #2a2a2a; }
+.rc-music-player--youtube { border: none; border-radius: 8px; overflow: hidden; }
+.rc-guestbook {
+  background: var(--panel-bg);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  padding: 16px;
+}
+.rc-guestbook textarea {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  font-family: var(--font-body);
+}
+.rc-guestbook button {
+  margin-top: 8px;
+  padding: 6px 16px;
+  background: var(--panel-bg);
+  color: var(--text-color);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  font-family: var(--font-heading);
+}
+.rc-link { font-family: var(--font-heading); color: var(--link-color); }
+.rc-link--button { display: inline-block; padding: 8px 20px; background: var(--panel-bg); color: var(--text-color); border: var(--border-style); border-radius: var(--border-radius); text-decoration: none; }
+.rc-link--retro-underline { text-decoration: underline wavy; }
+.rc-link--blinking { animation: rc-blink 1s step-end infinite; }
+@keyframes rc-blink { 50% { opacity: 0; } }
+.rc-canvas-container::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,0.15) 0px,rgba(0,0,0,0.15) 1px,transparent 1px,transparent 3px);pointer-events:none;z-index:9999;}
+@media (max-width: 768px) {
+  .rc-container { padding: 12px 8px; }
+  .rc-gallery { grid-template-columns: 1fr !important; }
+  .rc-nav { flex-direction: column; align-items: center; }
+}
