@@ -7,8 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  :root {
+    --bg-color: #050a05;
+    --text-color: #39ff14;
+    --heading-color: #39ff14;
+    --link-color: #39ff14;
+    --border-style: 2px solid #39ff14;
+    --border-color: #39ff14;
+    --border-radius: 0px;
+    --font-body: 'Fira Code', monospace;
+    --font-heading: 'VT323', monospace;
+    --panel-bg: #0a1a0a;
+    cursorUrl: preset-star;
+    backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
+    backgroundTile: true;
+  }
+  body { cursor: url('assets/cursor-star.png'), auto; }
+  body {
+    background-image: url('https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-body);">
   <nav class="rc-nav">
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
@@ -31,35 +55,7 @@
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    <h1 class="rc-heading" style="text-align:left;">16. Tips &amp; Best Practices</h1>
-  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
-  <h2 class="rc-heading" style="text-align:left;">Design Tips</h2>
-  <ul>
-  <li><strong>Start with a theme, then customize.</strong> Pick the closest theme to your vision, then tweak colors and fonts. Don't fight the theme — work with it.</li>
-  <li><strong>Use marquees sparingly.</strong> One marquee is nostalgic. Five marquees is chaos. Use them for announcements or fun messages, not body content.</li>
-  <li><strong>Badge rows belong at the bottom.</strong> Classic web placement. They're great for "sites I like" or community badges.</li>
-  <li><strong>Background images + tile = instant retro.</strong> A small repeating pattern GIF as a tiled background transforms the feel instantly.</li>
-  <li><strong>Custom cursors add personality.</strong> But keep them 32×32px or smaller for browser compatibility.</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">Content Tips</h2>
-  <ul>
-  <li><strong>Break content into pages.</strong> Don't put everything on one scrolling page. A Home page with links to About, Blog, and Links pages feels more authentic.</li>
-  <li><strong>Use dividers between sections.</strong> They break up content visually and add retro charm.</li>
-  <li><strong>Alt text on images.</strong> It's good practice for accessibility and shows up if an image fails to load.</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">Export Tips</h2>
-  <ul>
-  <li><strong>Preview before exporting.</strong> Always check the preview to make sure everything looks right.</li>
-  <li><strong>Test on mobile.</strong> RetroCraft exports responsive CSS. Open your exported site on a phone to verify it looks good.</li>
-  <li><strong>Keep your original assets.</strong> If you plan to move hosts later, keep local copies of your images so you're not dependent on CDN URLs.</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">Image Sizing</h2>
-  <ul>
-  <li><strong>Too big?</strong> Use the Image block's <strong>Custom</strong> size option to set exact pixel or percentage dimensions — no external resizing needed.</li>
-  <li><strong>Cursor images</strong> must be 32×32px or smaller for cross-browser support.</li>
-  <li><strong>Background patterns</strong> work best at small sizes (100×100px to 400×400px) when tiling.</li>
-  <li><strong>Badges</strong> should be 88×31px (the classic web button standard) for the Badge Row block.</li>
-</ul>
+    
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>

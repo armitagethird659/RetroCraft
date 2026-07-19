@@ -7,8 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  :root {
+    --bg-color: #050a05;
+    --text-color: #39ff14;
+    --heading-color: #39ff14;
+    --link-color: #39ff14;
+    --border-style: 2px solid #39ff14;
+    --border-color: #39ff14;
+    --border-radius: 0px;
+    --font-body: 'Fira Code', monospace;
+    --font-heading: 'VT323', monospace;
+    --panel-bg: #0a1a0a;
+    cursorUrl: preset-star;
+    backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
+    backgroundTile: true;
+  }
+  body { cursor: url('assets/cursor-star.png'), auto; }
+  body {
+    background-image: url('https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-body);">
   <nav class="rc-nav">
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
@@ -31,23 +55,7 @@
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    <h1 class="rc-heading" style="text-align:left;">10. Custom Cursors</h1>
-  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
-  <div class="rc-text" style="text-align:left;"><p>Add a personal touch with a custom mouse cursor. Located in the Theme Customizer.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Preset Cursors</h2>
-  <div class="rc-text" style="text-align:left;"><p>Six built-in options designed to match the nostalgic themes:</p></div>
-  <ul>
-  <li>🐱 Cat</li>
-  <li>💕 Heart</li>
-  <li>⭐ Star</li>
-  <li>💀 Skull</li>
-  <li>🗡️ Dagger</li>
-  <li>💖 Pixel Heart</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">Custom Cursor from Asset Library</h2>
-  <div class="rc-text" style="text-align:left;"><p>Toggle "Use custom cursor from Asset Library" to pick any image from your uploaded assets or by URL.</p></div>
-  <div class="rc-button-wrap"><a class="rc-button rc-button-default" href="#" target="_blank" rel="noopener">!NOTE Custom cursor images should be 32×32 pixels or smaller for full browser support. Chrome and Firefox limit cursor image dimensions — larger images may not display correctly. Resize your cursor image in any image editor before uploading.</a></div>
-  <div class="rc-button-wrap"><a class="rc-button rc-button-terminal" href="#" target="_blank" rel="noopener">!TIP Custom cursors use pure CSS (cursor: url('image.png'), auto;) — no JavaScript needed in your exported site.</a></div>
+    
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>

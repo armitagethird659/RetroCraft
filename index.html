@@ -7,8 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  :root {
+    --bg-color: #050a05;
+    --text-color: #39ff14;
+    --heading-color: #39ff14;
+    --link-color: #39ff14;
+    --border-style: 2px solid #39ff14;
+    --border-color: #39ff14;
+    --border-radius: 0px;
+    --font-body: 'Fira Code', monospace;
+    --font-heading: 'VT323', monospace;
+    --panel-bg: #0a1a0a;
+    cursorUrl: preset-star;
+    backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
+    backgroundTile: true;
+  }
+  body { cursor: url('assets/cursor-star.png'), auto; }
+  body {
+    background-image: url('https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-body);">
   <nav class="rc-nav">
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
@@ -44,10 +68,11 @@
   <p style="text-align: center; color: var(--accent-color); font-family: 'VT323', monospace; font-size: 1.3em;">
     Make a blog. A fan page. A shrine. A portfolio. A review site. Make it yours. 💖
   </p></div>
-  <a class="rc-link rc-link--blinking" href="https://retro-craft-site.base44.app" target="_blank" rel="noopener">https://retro-craft-site.base44.app</a>
+  <div style="margin-left:auto;margin-right:auto;"><a class="rc-link rc-link--blinking" href="https://retro-craft-site.base44.app" target="_blank" rel="noopener">Start Building - https://retro-craft-site.base44.app</a></div>
   <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
   <div class="rc-gallery" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;"><div class="rc-gallery-item" style="border:1px solid var(--border-color);padding:4px;"><img src="https://pixelsafari.neocities.org/blinkies/crashlanded.gif" alt="" loading="lazy"></div><div class="rc-gallery-item" style="border:1px solid var(--border-color);padding:4px;"><img src="https://pixelsafari.neocities.org/blinkies/glitter.gif" alt="" loading="lazy"></div><div class="rc-gallery-item" style="border:1px solid var(--border-color);padding:4px;"><img src="https://pixelsafari.neocities.org/blinkies/fallingstar.gif" alt="" loading="lazy"></div></div>
   <div style="max-width:45%;margin-left:auto;margin-right:auto;"><div class="rc-music-player rc-music-player--youtube"><div class="rc-player-title">Halcyon On and On &mdash; Orbital</div><iframe class="rc-music-player--youtube" src="https://www.youtube.com/embed/bV-hSgL1R74?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;max-width:300px;height:170px;"></iframe></div></div>
+  <div class="rc-visitor-counter" style="text-align: center"><img src="https://hitwebcounter.com/counter/counter.php?page=rc_counter_1784328842990&style=0001&type=default&initCount=0" alt="Visitor Counter" class="rc-counter-img" /></div>
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>

@@ -7,8 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  :root {
+    --bg-color: #050a05;
+    --text-color: #39ff14;
+    --heading-color: #39ff14;
+    --link-color: #39ff14;
+    --border-style: 2px solid #39ff14;
+    --border-color: #39ff14;
+    --border-radius: 0px;
+    --font-body: 'Fira Code', monospace;
+    --font-heading: 'VT323', monospace;
+    --panel-bg: #0a1a0a;
+    cursorUrl: preset-star;
+    backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
+    backgroundTile: true;
+  }
+  body { cursor: url('assets/cursor-star.png'), auto; }
+  body {
+    background-image: url('https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-body);">
   <nav class="rc-nav">
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
@@ -31,42 +55,7 @@
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    <h1 class="rc-heading" style="text-align:left;">7. Block Types Reference</h1>
-  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
-  
-  <h2 class="rc-heading" style="text-align:left;">Text</h2>
-  <div class="rc-text" style="text-align:left;"><p>Rich text content. Edit directly on the canvas or via the sidebar. Supports bold, italic, links, and text alignment.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Heading</h2>
-  <div class="rc-text" style="text-align:left;"><p>Large section titles. Choose H1, H2, or H3. Optional rainbow text effect for extra nostalgia.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Image</h2>
-  <div class="rc-text" style="text-align:left;"><p>Display an image from two sources:</p></div>
-  <ul>
-  <li><strong>From Asset Library</strong> — pick from your uploaded assets or built-in stickers</li>
-  <li><strong>From URL</strong> — paste any external image URL</li>
-</ul>
-  <div class="rc-text" style="text-align:left;"><p>Sizing options: Original Size, Fit Width, or Custom dimensions. Add alt text for accessibility and a link URL to make the image clickable.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Divider</h2>
-  <div class="rc-text" style="text-align:left;"><p>Visual separators between sections. Styles: horizontal rule, animated GIF divider, rainbow line, or pixel dotted.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Button</h2>
-  <div class="rc-text" style="text-align:left;"><p>A styled clickable button. Link type can be URL (any web link) or Email (opens the visitor's mail app with optional pre-filled subject). Button styles: default, bevel, sparkle, or terminal.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Link</h2>
-  <div class="rc-text" style="text-align:left;"><p>A styled hyperlink that can display as text or an image. Link to another page in your site (internal) or any external URL. Text styles: default, button, retro underline, or blinking.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Marquee</h2>
-  <div class="rc-text" style="text-align:left;"><p>Scrolling text — the classic early-web effect. Set direction (left/right), speed, and toggle a rainbow background. Pure CSS in the export — no JavaScript needed.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">HTML Snippet</h2>
-  <div class="rc-text" style="text-align:left;"><p>For advanced users. Paste raw HTML that renders in preview and export. Use this for embeds, custom widgets, or anything RetroCraft doesn't have a dedicated block for.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Gallery</h2>
-  <div class="rc-text" style="text-align:left;"><p>A grid of images. Add images from your asset library or by URL. Choose 2, 3, or 4 columns. Toggle borders on or off.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Badge Row</h2>
-  <div class="rc-text" style="text-align:left;"><p>A horizontal row of 88×31 badges (the classic web button size). Add badges from the built-in library or by URL. Set alignment and spacing.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Music Player</h2>
-  <div class="rc-text" style="text-align:left;"><p>Add music to your site from two sources:</p></div>
-  <ul>
-  <li><strong>Audio File</strong> — upload an MP3/WAV via the Asset Manager</li>
-  <li><strong>YouTube</strong> — paste any YouTube URL (full link, short link, or video ID)</li>
-</ul>
-  <div class="rc-text" style="text-align:left;"><p>Player styles include Winamp classic, cassette tape, and minimal retro bar. Toggle autoplay and loop.</p></div>
-  <div class="rc-button-wrap"><a class="rc-button rc-button-terminal" href="#" target="_blank" rel="noopener">!TIP YouTube embeds use a standard &lt;iframe&gt; tag — no extra JavaScript on your site. The player loads from YouTube's servers, so it works on any static host including GitHub Pages.</a></div>
+    
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>

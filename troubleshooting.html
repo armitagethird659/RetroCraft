@@ -7,8 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  :root {
+    --bg-color: #050a05;
+    --text-color: #39ff14;
+    --heading-color: #39ff14;
+    --link-color: #39ff14;
+    --border-style: 2px solid #39ff14;
+    --border-color: #39ff14;
+    --border-radius: 0px;
+    --font-body: 'Fira Code', monospace;
+    --font-heading: 'VT323', monospace;
+    --panel-bg: #0a1a0a;
+    cursorUrl: preset-star;
+    backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
+    backgroundTile: true;
+  }
+  body { cursor: url('assets/cursor-star.png'), auto; }
+  body {
+    background-image: url('https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-body);">
   <nav class="rc-nav">
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
@@ -31,44 +55,7 @@
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    <h1 class="rc-heading" style="text-align:left;">18. Troubleshooting</h1>
-  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
-  <h2 class="rc-heading" style="text-align:left;">Theme not showing in preview</h2>
-  <div class="rc-text" style="text-align:left;">If your preview shows a white background instead of your theme:</div>
-  <ul>
-  <li>Make sure you've selected a theme (check the Themes tab in the left sidebar)</li>
-  <li>Try switching to a different theme and back — this forces a CSS variable refresh</li>
-  <li>Check that your custom theme overrides aren't set to white/empty values</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">YouTube video shows an error in preview</h2>
-  <div class="rc-text" style="text-align:left;">If you see "An error occurred" in the preview but it works in the editor:</div>
-  <ul>
-  <li>This is a preview iframe sandbox issue — the exported site works fine</li>
-  <li>Export your site and open the HTML file in a browser to verify the YouTube embed works</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">Internal links don't work in preview</h2>
-  <div class="rc-text" style="text-align:left;">Preview simulates a static server. Internal page links should switch the preview to that page. If you get a "File not found" error, make sure the target page exists and has a valid slug.</div>
-  <h2 class="rc-heading" style="text-align:left;">Image not appearing</h2>
-  <ul>
-  <li>Check that the image URL is correct (copy it from the Asset Manager)</li>
-  <li>If using an external URL, make sure it's a direct image link (ends in .jpg, .png, .gif) not a page link</li>
-  <li>Some external sites block hotlinking — upload the image to your Asset Library instead</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">Exported site looks different from preview</h2>
-  <div class="rc-text" style="text-align:left;">Preview and export use the same compilation engine, so they should match. If they don't:</div>
-  <ul>
-  <li>Make sure you've saved your project before exporting</li>
-  <li>Clear your browser cache and re-download the export</li>
-  <li>Open the exported <code>style.css</code> and verify the CSS variables are present</li>
-</ul>
-  <h2 class="rc-heading" style="text-align:left;">GitHub Pages shows 404 after publishing</h2>
-  <h3>GitHub Pages shows 404 after publishing</h3>
-<ul>
-  <li>GitHub Pages takes 1-2 minutes to build after first publish — wait and refresh</li>
-  <li>Check that your repo is set to public</li>
-  <li>Verify Pages is enabled: Settings → Pages → Source should be "Deploy from branch: main / (root)"</li>
-  <li>Your URL is <code>https://{username}.github.io/{repo-name}</code> — check the spelling</li>
-</ul>
+    
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>

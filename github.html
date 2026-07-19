@@ -7,8 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+  :root {
+    --bg-color: #050a05;
+    --text-color: #39ff14;
+    --heading-color: #39ff14;
+    --link-color: #39ff14;
+    --border-style: 2px solid #39ff14;
+    --border-color: #39ff14;
+    --border-radius: 0px;
+    --font-body: 'Fira Code', monospace;
+    --font-heading: 'VT323', monospace;
+    --panel-bg: #0a1a0a;
+    cursorUrl: preset-star;
+    backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
+    backgroundTile: true;
+  }
+  body { cursor: url('assets/cursor-star.png'), auto; }
+  body {
+    background-image: url('https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-body);">
   <nav class="rc-nav">
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
@@ -31,42 +55,7 @@
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    <h1 class="rc-heading" style="text-align:left;">14. Publishing to GitHub Pages</h1>
-  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
-  <div class="rc-text" style="text-align:left;"><p>GitHub Pages offers free hosting for static websites with optional custom domains. RetroCraft supports two levels of publishing.</p></div>
-  <h2 class="rc-heading" style="text-align:left;">Level 1: Manual Upload</h2>
-  <div class="rc-text" style="text-align:left;">No GitHub token required. After exporting your ZIP:</div>
-  <ol>
-  <li>Extract the ZIP file</li>
-  <li>Create a new repository on <a href="https://github.com/new">github.com/new</a></li>
-  <li>Upload all files (drag and drop into the repo)</li>
-  <li>Go to <strong>Settings → Pages</strong></li>
-  <li>Set source to <strong>Deploy from branch</strong>, branch <code>main</code>, folder <code>/ (root)</code></li>
-  <li>Wait 1-2 minutes for the build</li>
-  <li>Your site is live at <code>https://{username}.github.io/{repo-name}</code></li>
-</ol>
-  <h2 class="rc-heading" style="text-align:left;">Level 2: Automated Publish</h2>
-  <div class="rc-text" style="text-align:left;">RetroCraft can publish directly to GitHub using a Personal Access Token.</div>
-  <div class="rc-text" style="text-align:left;">Setup (one-time):</div>
-  <ol>
-  <li>Go to <a href="https://github.com/settings/tokens">github.com/settings/tokens</a></li>
-  <li>Click <strong>Generate new token (classic)</strong></li>
-  <li>Give it a name like "RetroCraft"</li>
-  <li>Select the <strong>repo</strong> scope (full repository access)</li>
-  <li>Generate and copy the token</li>
-  <li>In RetroCraft, go to <strong>Project Settings</strong> and paste the token</li>
-  <li>Enter your desired repository name</li>
-  <li>Click <strong>[Connect & Test]</strong> to validate</li>
-</ol>
-  <div class="rc-text" style="text-align:left;">Publishing:</div>
-  <ol>
-  <li>Click <strong>[Publish to GitHub]</strong> in the top bar</li>
-  <li>RetroCraft will: validate your token → create the repo (if needed) → push all files → enable GitHub Pages</li>
-  <li>Watch the progress indicator through each step</li>
-  <li>When done, your live URL is displayed with a copy button</li>
-</ol>
-  <div class="rc-button-wrap"><a class="rc-button rc-button-default" href="#" target="_blank" rel="noopener">!NOTE Your GitHub token is not stored in your project settings and is never logged or exposed in error messages. Treat it like a password — anyone with your token can modify your repositories.</a></div>
-  <div class="rc-button-wrap"><a class="rc-button rc-button-terminal" href="#" target="_blank" rel="noopener">!TIP GitHub Pages can take 1-2 minutes to build after publishing. If your site shows a 404 immediately, wait a moment and refresh.</a></div>
+    
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>
