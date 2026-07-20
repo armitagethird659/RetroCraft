@@ -19,9 +19,9 @@
     --font-body: 'Fira Code', monospace;
     --font-heading: 'VT323', monospace;
     --panel-bg: #0a1a0a;
-    cursorUrl: preset-star;
     backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
     backgroundTile: true;
+    cursorUrl: preset-star;
   }
   body { cursor: url('assets/cursor-star.png'), auto; }
   body {
@@ -37,25 +37,74 @@
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
       <a href="dashboard.html">Dashboard</a>
-      <a href="creating-project.html">Creating Project</a>
+      <a href="creating-a-project.html">Creating a Project</a>
       <a href="choosing-theme.html">Choosing Theme</a>
-      <a href="managing-pages.html">Managing Pages</a>
-      <a href="working-with-blocks.html">Working with Blocks</a>
+      <a href="pages.html">Pages</a>
+      <a href="blocks.html">Blocks</a>
       <a href="block-types.html">Block Types</a>
-      <a href="asset-management.html">Asset Management</a>
+      <a href="assets.html">Assets</a>
       <a href="theme-customizer.html">Theme Customizer</a>
-      <a href="custom-cursor.html">Custom Cursor</a>
+      <a href="custom-cursors.html">Custom Cursors</a>
       <a href="background-image.html">Background Image</a>
       <a href="preview.html">Preview</a>
       <a href="export.html">Export</a>
       <a href="github.html">GitHub</a>
       <a href="settings.html">Settings</a>
-      <a href="faq.html">FAQ</a>
       <a href="tips.html">Tips</a>
+      <a href="faq.html">FAQ</a>
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    
+    <h1 class="rc-heading" style="text-align:left;">13. 🚀Exporting Your Site</h1>
+  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
+  <div class="rc-text" style="text-align:left;">When you're happy with your site, export it as a downloadable ZIP file containing everything needed to host it.</div>
+  <h2 class="rc-heading" style="text-align:left;">What's in the ZIP</h2>
+  <pre><code>my-site-export.zip
+├── index.html        ← Homepage
+├── about.html        ← About page
+├── blog.html         ← Blog page
+├── style.css         ← All theme styles
+└── assets/           ← Cursor images and bundled assets
+    └── README.txt    ← Notes on externally hosted assets</code></pre>
+  <h2 class="rc-heading" style="text-align:left;">How to Export</h2>
+  <ol>
+  <li>Click <strong>[Export ZIP]</strong> in the top bar</li>
+  <li>Wait for the compilation to finish (usually a few seconds)</li>
+  <li>Your browser downloads <code>{site-name}-export.zip</code></li>
+</ol>
+
+  <h2 class="rc-heading" style="text-align:left;">Hosting Options</h2>
+  <div class="rc-text" style="text-align:left;">The exported files are pure static HTML/CSS — they work on any web host:</div>
+  <table>
+  <tr>
+    <th>Host</th>
+    <th>Cost</th>
+    <th>How</th>
+  </tr>
+  <tr>
+    <td>GitHub Pages</td>
+    <td>Free</td>
+    <td>Upload files to a repo, enable Pages (see next section)</td>
+  </tr>
+  <tr>
+    <td>Netlify</td>
+    <td>Free</td>
+    <td>Drag the ZIP contents onto <a href="https://app.netlify.com/drop">netlify.com/drop</a></td>
+  </tr>
+  <tr>
+    <td>Vercel</td>
+    <td>Free</td>
+    <td>Upload via the Vercel dashboard or CLI</td>
+  </tr>
+  <tr>
+    <td>Any web host</td>
+    <td>Varies</td>
+    <td>Upload files via FTP or file manager</td>
+  </tr>
+</table>
+
+  <div class="rc-button-wrap" style="text-align:center;"><a class="rc-button rc-button-bevel" href="#">⭐!TIP Assets uploaded through RetroCraft's Asset Manager are hosted on CDN URLs. These are embedded directly in your exported HTML. The files will remain accessible as long as your RetroCraft account is active. For permanent hosting, consider downloading and re-hosting images on your own server.</a></div>
+  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>

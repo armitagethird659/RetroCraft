@@ -19,9 +19,9 @@
     --font-body: 'Fira Code', monospace;
     --font-heading: 'VT323', monospace;
     --panel-bg: #0a1a0a;
-    cursorUrl: preset-star;
     backgroundImage: https://biscuit2.crd.co/assets/images/image127.gif?v=bd11421d;
     backgroundTile: true;
+    cursorUrl: preset-star;
   }
   body { cursor: url('assets/cursor-star.png'), auto; }
   body {
@@ -37,25 +37,72 @@
       <a href="index.html">Home</a>
       <a href="getting-started.html">Getting Started</a>
       <a href="dashboard.html">Dashboard</a>
-      <a href="creating-project.html">Creating Project</a>
+      <a href="creating-a-project.html">Creating a Project</a>
       <a href="choosing-theme.html">Choosing Theme</a>
-      <a href="managing-pages.html">Managing Pages</a>
-      <a href="working-with-blocks.html">Working with Blocks</a>
+      <a href="pages.html">Pages</a>
+      <a href="blocks.html">Blocks</a>
       <a href="block-types.html">Block Types</a>
-      <a href="asset-management.html">Asset Management</a>
+      <a href="assets.html">Assets</a>
       <a href="theme-customizer.html">Theme Customizer</a>
-      <a href="custom-cursor.html">Custom Cursor</a>
+      <a href="custom-cursors.html">Custom Cursors</a>
       <a href="background-image.html">Background Image</a>
       <a href="preview.html">Preview</a>
       <a href="export.html">Export</a>
       <a href="github.html">GitHub</a>
       <a href="settings.html">Settings</a>
-      <a href="faq.html">FAQ</a>
       <a href="tips.html">Tips</a>
+      <a href="faq.html">FAQ</a>
       <a href="troubleshooting.html">Troubleshooting</a>
   </nav>
   <main class="rc-container">
-    
+    <h1 class="rc-heading" style="text-align:left;">7. 🖼️Block Types Reference</h1>
+  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
+  <h2 class="rc-heading" style="text-align:left;">Text</h2>
+  <div class="rc-text" style="text-align:left;">Rich text content. Edit directly on the canvas or via the sidebar. Supports bold, italic, links, and text alignment.</div>
+  <h2 class="rc-heading" style="text-align:left;">Heading</h2>
+  <div class="rc-text" style="text-align:left;">Large section titles. Choose H1, H2, or H3. Optional rainbow text effect for extra nostalgia.</div>
+  <h2 class="rc-heading" style="text-align:left;">Image</h2>
+  <div class="rc-text" style="text-align:left;">Display an image from two sources:</div>
+  <ul>
+  <li><strong>From Asset Library</strong> — pick from your uploaded assets or built-in stickers</li>
+  <li><strong>From URL</strong> — paste any external image URL</li>
+</ul>
+  <div class="rc-text" style="text-align:left;">Sizing options: Original Size, Fit Width, or Custom dimensions. Add alt text for accessibility and a link URL to make the image clickable.</div>
+  <h2 class="rc-heading" style="text-align:left;">Divider</h2>
+  <div class="rc-text" style="text-align:left;">Visual separators between sections. Styles: horizontal rule, animated GIF divider, rainbow line, or pixel dotted.</div>
+  <h2 class="rc-heading" style="text-align:left;">Button</h2>
+  <div class="rc-text" style="text-align:left;">A styled clickable button. Link type can be URL (any web link) or Email (opens the visitor's mail app with optional pre-filled subject). Button styles: default, bevel, sparkle, or terminal.</div>
+  <h2 class="rc-heading" style="text-align:left;">Link</h2>
+  <div class="rc-text" style="text-align:left;">A styled hyperlink that can display as text or an image. Link to another page in your site (internal) or any external URL. Text styles: default, button, retro underline, or blinking.</div>
+  <h2 class="rc-heading" style="text-align:left;">Marquee</h2>
+  <div class="rc-text" style="text-align:left;">Scrolling text — the classic early-web effect. Set direction (left/right), speed, and toggle a rainbow background. Pure CSS in the export — no JavaScript needed.</div>
+  <h2 class="rc-heading" style="text-align:left;">HTML Snippet</h2>
+  <div class="rc-text" style="text-align:left;">For advanced users. Paste raw HTML that renders in preview and export. Use this for embeds, custom widgets, or anything RetroCraft doesn't have a dedicated block for.</div>
+  <h2 class="rc-heading" style="text-align:left;">Gallery</h2>
+  <div class="rc-text" style="text-align:left;">A grid of images. Add images from your asset library or by URL. Choose 2, 3, or 4 columns. Toggle borders on or off.</div>
+  <h2 class="rc-heading" style="text-align:left;">Badge Row</h2>
+  <div class="rc-text" style="text-align:left;">A horizontal row of 88×31 badges (the classic web button size). Add badges from the built-in library or by URL. Set alignment and spacing.</div>
+  <h2 class="rc-heading" style="text-align:left;">Music Player</h2>
+  <div class="rc-text" style="text-align:left;">Add music to your site from two sources:</div>
+  <ul>
+  <li><strong>Audio File</strong> — upload an MP3/WAV via the Asset Manager</li>
+  <li><strong>YouTube</strong> — paste any YouTube URL (full link, short link, or video ID)</li>
+</ul>
+  <div class="rc-text" style="text-align:left;">Player styles include Winamp classic, cassette tape, and minimal retro bar. Toggle autoplay and loop.</div>
+  <h2 class="rc-heading" style="text-align:left;">Visitor Counter</h2>
+  <div class="rc-text" style="text-align:left;">Display a retro hit counter showing how many people have visited your page — the classic early-web badge of honor.</div>
+  <p>Heading (optional): Text shown above the counter, like "You are visitor number:"</p>
+<p>Heading Alignment: Left, center, or right</p>
+<p>Counter Style: Choose from five retro digit styles: </p>
+<p>Digital — clean monospace LCD digits</p>
+<p>Odometer — classic mechanical counter digits</p>
+<p>LED — red glowing LED segments on black</p>
+<p>Retro — green monospace on black (terminal style) </p>
+<p>Simple — clean sans-serif digits</p>
+
+  <div class="rc-text" style="text-align:left;">The counter works in the exported site without any JavaScript — it uses an image-based counter service that tracks visits server-side. Each counter has a unique ID so different pages get independent counts. No sign-up or account required.</div>
+  <div style="margin-left:auto;margin-right:auto;"><div class="rc-button-wrap" style="text-align:center;"><a class="rc-button rc-button-bevel" href="#">⭐!TIP YouTube embeds use a standard &lt;iframe&gt; tag — no extra JavaScript on your site. The player loads from YouTube's servers, so it works on any static host including GitHub Pages.</a></div></div>
+  <hr class="rc-divider" style="border:none;height:4px;background:repeating-linear-gradient(90deg,var(--border-color) 0,var(--border-color) 4px,transparent 4px,transparent 8px);">
   </main>
   <footer class="rc-footer">Made with RetroCraft &#127760;</footer>
 </body>
